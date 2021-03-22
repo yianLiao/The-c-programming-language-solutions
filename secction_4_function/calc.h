@@ -15,6 +15,7 @@ void push(double);
 double pop(void);
 int getop(char[]);
 int getop_line(char[]);
+int getop_static(char[]);
 int igetch(void);
 void iungetch(int c);
 void iungets(char s[]);

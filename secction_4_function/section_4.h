@@ -10,4 +10,7 @@
 void strrindex_call(void);
 void exatof_call(void);
 void mcalculator_call(void);
+void itoa_recur_call(void);
+void reverse_recur_call(void);
+void swap_call(void);
 #endif /* section_4_h */

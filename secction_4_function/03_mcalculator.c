@@ -16,7 +16,7 @@
 
 int mcalculator(void);
 void mcalculator_call(void){
-    char *s = "1.0 2.0 + -.5 -.5 + * 3 + sin 6 5 % - exp\n";//sin((1+2)*(-0.5-0.5) + 3)-(6 % 5) = -1
+    char *s = "1.0 2.0 + -.5 -.5 + * 3 + sin 6 5 % - \n";//sin((1+2)*(-0.5-0.5) + 3)-(6 % 5) = -1
     printf("auto input string: %s\n", s);
     iungets(s);
     //ungets(s); //exercise 4-10
@@ -30,7 +30,8 @@ int mcalculator(void){
     char s[MAXOP];
     
     while((type = getop(s)) != EOF){
-        //exercise 4-10 use getop_line(s) instead
+        //exercise 4-10 use getop_line(s) instead and change iungets to ungets
+        //exercise 4-11 use getop_static(s) instead
         switch (type) {
             case LIBFUNC:
                 dofunc(s);

@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 #include "section_1.h"
+int TABWIDTH = 4; //spaces number of a tab.Only defined here as external var, and declared in section_1.h, then used elsewhere.
 void replace_tab(void){
     int c;
     int i;

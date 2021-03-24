@@ -10,7 +10,7 @@
 #define MAX_LEN 5 /* maximum input line size*/
 #define IN 1 /* current Line read not yet finished, still inside the Line */
 #define OUT 0 /* current Line read finished */
-
+int igetch(void);
 void copy(char to[], char from[]);
 void arbit_longest_print(void){
     int tempLen = 0; /* length of current read */
@@ -49,7 +49,7 @@ int get_line(char s[], int lim){
     /* get a line into s, return the actual length of this line */
     int c;
     int i;
-    for(i = 0; i <= lim - 2 && (c = getchar()) != EOF && c != '\n'; ++i){
+    for(i = 0; i <= lim - 2 && (c = igetch()) != EOF && c != '\n'; ++i){
         //mind the order, check overflow first!
         s[i] = c;
     }

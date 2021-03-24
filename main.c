@@ -12,9 +12,10 @@
 #include "section_2.h"
 #include "section_3.h"
 #include "section_4.h"
+#include "section_5.h"
 int main(int argc, const char * argv[]) {
     //TEST: call one function from a specific section
-    swap_call();
+    sort_lines_call();
     return EXIT_SUCCESS;
 }
 
